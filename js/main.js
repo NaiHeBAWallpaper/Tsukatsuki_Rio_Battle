@@ -44,7 +44,8 @@ const subtitleLocales = {
 	Chinese: 'zh-Hans',
 	TraditionalChinese: 'zh-Hant',
 	Japanese: 'ja',
-	Korean: 'ko'
+	Korean: 'ko',
+	Thai: 'th'
 };
 
 const CHARACTER = 'CH0331';
@@ -60,17 +61,18 @@ const AUDIO_DETAIL = [
                 "ふぅ……落ち着いたわ。"
             ],
             English: [
-                "Phew... I've calmed down now."
+                "*sigh*... That feels much better."
             ],
             Chinese: [
                 "呼……冷静下来了。"
             ],
             TraditionalChinese: [
-                "呼……冷靜下來了。"
+                "呼……涼快多了。"
             ],
             Korean: [
-                "젠장, 이제 진정했어"
-            ]
+                "후우…… 이제 좀 살 것 같아."
+            ],
+            Thai: ["ฮู่ว... ตอนนี้ค่อยยังชั่วแล้วละ"]
         }
     },
     {
@@ -80,21 +82,22 @@ const AUDIO_DETAIL = [
                 "私としたことが……目の前の結果に、気を取られてしまったみたい……。"
             ],
             English: [
-                "I failed to take the room temperature into account.",
-                "How unlike me... It seems I was too distracted by the results right in front of me."
+                "I forgot to consider the indoor temperature.",
+                "I must have— I got too distracted chasing the results before me..."
             ],
             Chinese: [
                 "我竟然没有考虑到室内温度……",
                 "真是失策，我似乎光顾着眼前的结果，而大意了。"
             ],
             TraditionalChinese: [
-                "我竟然沒有考慮到室內溫度……",
-                "真是失策，我似乎光顧著眼前的結果，而大意了。"
+                "我沒有考慮到室內溫度。",
+                "我也真是的……似乎是被眼前的結果分散了注意力……"
             ],
             Korean: [
-                "저는 방 온도를 고려하지 못했습니다.",
-                "나와는 달리... 제 눈앞의 결과로 너무 혼란스러웠던 것 같습니다."
-            ]
+                "실내 온도를 고려하지 않았거든.",
+                "나도 정말…… 눈앞의 결과에, 정신이 팔렸던 모양이야……."
+            ],
+            Thai: ["ฉันลืมนึกถึงอุณหภูมิห้องไปน่ะสิ","สงสัยฉันคง... เผลอใจลอย ไปกับผลลัพธ์ตรงหน้าน่ะ..."]
         }
     },
     {
@@ -104,21 +107,22 @@ const AUDIO_DETAIL = [
                 "暑さで、思考があまり……。"
             ],
             English: [
-                "Please, let me rest for a moment.",
-                "The heat... it's making it difficult to think clearly..."
+                "...Let me rest a little.",
+                "I can't think properly because it's so hot..."
             ],
             Chinese: [
                 "请让我稍微休息一下。",
                 "因为太热了，思考也变得有些滞后……"
             ],
             TraditionalChinese: [
-                "請讓我稍微休息一下。",
-                "因為太熱了，思考也變得有些滯後……"
+                "……讓我稍微，休息一下吧。",
+                "因為太熱，思考不是很……"
             ],
             Korean: [
-                "잠깐 쉬게 해줘요",
-                "열은... 명확하게 생각하기 힘들어..."
-            ]
+                "……조금, 쉬게 해줬으면 해.",
+                "더위에, 사고가 제대로……."
+            ],
+            Thai: ["ขอฉันพักหน่อยนะ...","ฉันร้อนจนคิดอะไรไม่ค่อยออกเลย..."]
         }
     },
     {
@@ -127,17 +131,18 @@ const AUDIO_DETAIL = [
                 "……先生？どうしてそんな顔で……。"
             ],
             English: [
-                "Sensei? Why are you looking at me like that?"
+                "...Sensei? Why are you looking at me like..."
             ],
             Chinese: [
                 "老师？为什么用那种表情看着我？"
             ],
             TraditionalChinese: [
-                "老師？為什麼用那種表情看著我？"
+                "……老師？為什麼露出那種表情……"
             ],
             Korean: [
-                "상사, 왜 날 이렇게 쳐다보고 있어?"
-            ]
+                "……선생? 왜 그런 얼굴로……."
+            ],
+            Thai: ["ครู...? ทำไมถึงทำหน้าแบบนั้นล่ะ..."]
         }
     },
     {
@@ -147,21 +152,22 @@ const AUDIO_DETAIL = [
                 "（わ、私は……なにを……！？）"
             ],
             English: [
-                "Ah!",
-                "W-What was I doing...?"
+                "*gasp*!",
+                "(Wh-What was I...thinking...?!)"
             ],
             Chinese: [
                 "啊！",
                 "我、我到底在做什么……"
             ],
             TraditionalChinese: [
-                "啊！",
-                "我、我到底在做什麼……"
+                "……啊！！",
+                "（我，我……做了　什麼……！？)"
             ],
             Korean: [
-                "아, 아!",
-                "내가 뭐하는 거야?"
-            ]
+                "……아!!",
+                "(나, 나는…… 무엇을……!?)"
+            ],
+            Thai: ["อ๊ะ...!!","(นะ... นี่ฉัน... ทำอะไรลงไป...!?)"]
         }
     },
     {
@@ -171,21 +177,22 @@ const AUDIO_DETAIL = [
                 "わ、私はもう、大丈夫だから……！"
             ],
             English: [
-                "Th-This wasn't intentional. My apologies.",
-                "A-Ah, I'm quite alright now, so..."
+                "Th-This wasn't intentional...! I'm sorry...!",
+                "I-I'm okay now, so...!"
             ],
             Chinese: [
                 "这、这不是故意的，非常抱歉。",
                 "啊，我已经没事了，所以请不用担心……"
             ],
             TraditionalChinese: [
-                "這、這不是故意的，非常抱歉。",
-                "啊，我已經沒事了，所以請不用擔心……"
+                "這，這不是故意的……！對不起……！",
+                "我，我已經，沒事了……！"
             ],
             Korean: [
-                "이건 의도치 않은 일이야 미안해",
-                "아, 지금은 괜찮아..."
-            ]
+                "이, 이건 고의가 아니야……! 미안해……!",
+                "나, 나는 이제, 괜찮으니까……!"
+            ],
+            Thai: ["ฉะ... ฉันไม่ได้ตั้งใจนะ...! ขอโทษ...!","ฉัน... ตอนนี้ฉัน... ไม่เป็นไรแล้วละ...!"]
         }
     }
 ];
@@ -297,7 +304,7 @@ function playVoiceline() {
 			track.play().catch(finish);
 
 			if (dialogBox) {
-				textbox.textContent = dialog[window.selectedLanguage][index];
+				textbox.textContent = getSubtitleText(dialog, window.selectedLanguage, index);
 				textbox.style.opacity = 1;
 			}
 		},
@@ -467,6 +474,16 @@ function setMouse(event) {
 	return { x: ax - canvas.width * positionX, y: ay - canvas.height * positionY };
 }
 
+function getSubtitleText(dialog, language, index) {
+	let text = dialog?.[language]?.[index];
+	if (text == null && language === 'Thai') {
+		language = 'English';
+		text = dialog?.[language]?.[index];
+	}
+	textbox.lang = subtitleLocales[language];
+	return text ?? "";
+}
+
 function updateSubtitleLanguage() {
 	let language = subtitleLanguagePreference;
 	if (language === 'auto') {
@@ -480,6 +497,8 @@ function updateSubtitleLanguage() {
 			language = 'Japanese';
 		} else if (primary === 'ko' || primary === 'korean' || primary === 'koreana') {
 			language = 'Korean';
+		} else if (primary === 'th' || primary === 'thai') {
+			language = 'Thai';
 		} else {
 			language = 'English';
 		}
@@ -489,7 +508,7 @@ function updateSubtitleLanguage() {
 	window.selectedLanguage = language;
 	textbox.lang = subtitleLocales[language];
 	const clip = currentTracks.at(-1);
-	if (dialogBox && clip) textbox.textContent = clip.dialog[language][clip.index];
+	if (dialogBox && clip) textbox.textContent = getSubtitleText(clip.dialog, language, clip.index);
 }
 
 function init() {
